@@ -1,0 +1,40 @@
+.bodyIndex {
+    .headerIndex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: grey;
+        color: black;
+
+        .logoContainer {
+            height: 100px;
+            width: 100px;
+            margin-top: 15px;
+            background-color: transparent;
+
+            .logo {
+                width: 100%;
+            }
+        }
+        nav{
+            .ilContainer {
+                width: 700px;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+                
+                .botoNav {
+                    padding: 10px;
+                    background-color: darkgrey;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+
+    }
+
+}

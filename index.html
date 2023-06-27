@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,66 +8,139 @@
     <title>KaisenFit</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Roboto&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body class="bodyIndex">
     <header class="headerIndex">
-        <div class="logocontainer">
+        <div class="logoContainer">
             <a href="./index.html"><img src="./img/kaizen.png" alt="Logo Kaizen" class="logo"></a>
         </div>
         <nav>
-            <ul class="ilcontainer">
-                <il class="botoNav"><a href="./index.html">Inicio</a></il>
-                <il class="botoNav"><a href="./pages/contacto.html">Contacto</a></il>
-                <il class="botoNav"><a href="./pages/entrenamiento.html">Entrenamiento</a></il>
-                <il class="botoNav"><a href="./pages/alimentacion.html">Alimentacion</a></il>
-                <il class="botoNav"><a href="./pages/habitos.html">Habitos</a></il>
+            <ul class="ilContainer">
+                <li class="botoNav"><a href="./index.html">Inicio</a></li>
+                <li class="botoNav"><a href="./pages/contacto.html">Contacto</a></li>
+                <li class="botoNav"><a href="./pages/entrenamiento.html">Entrenamiento</a></li>
+                <li class="botoNav"><a href="./pages/alimentacion.html">Alimentacion</a></li>
+                <li class="botoNav"><a href="./pages/habitos.html">Habitos</a></li>
             </ul>
         </nav>
-   </header>
-   <main>
-    <section class="introduccion">
-        <h1>Kaizen como filosofia de vida</h1>
-        <article>
-            <div>
-                <p>Kaizen es una palabra japonesa que se compone de dos sinogramas de escritura japonesa que significan “bueno” y “cambio”, y actualmente, Kaizen se refiere a un sistema de mejora continua en el que las pequeñas, pero constantes mejoras, acumulan tras de sí grandes beneficios a largo plazo.</p>
-            </div>
-        </article>
-    </section>
-    <section>
-        <article>
-            <div class="Entrenamiento">
-                <img src="./img/Entrenamiento.png" alt="Hombre musculado" class="imgHombre">
-                <p>En nuestra seccion de entrenaminetos encontraras rutinas (con su respectiva escala de progreso) segun en el nivel que estes, tambien veras diferentes formatos de entrenamineto como calistenia, funcional y demas </p>
-            </div>
-        </article>
-    </section>
-    <section>
-        <article>
-            <div class="nutricion">
-                <p class="pNutricion">Dentro de nuestra seccion de Alimentacion podras aprender a calcular tu gasto calorico a travez de harris benedi y asi armar tu plan de nutricion con chat gpt, tambien encontraras tip para cocinar diferentes platos y info sobre nutricion variada</p>
-                <img src="./img/Nutricion.png" class="imgNutricion" alt="mujer con fondo de frutas y verduras">
-            </div>
-        </article>
-    </section>
-    <section>
-        <article>
-            <div class="habitos">
-                <img src="./img/Habitos.png" alt="postura de meditacion" class="imgHabitos">
-                <p>Quien domina sus habitos controlara su vida, en esta seccion encontraras informacion sobre diferentes habitos para reprogramar tu vida </p>
-            </div>
-        </article>
-    </section>
-   </main>
-   <footer>
+    </header>
+    <main>
+        <section>
+            <div id="carousel" class="carousel slide hero-slides" data-ride="carousel" data-pause="hover" data-interval="5000">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active boat">
+                    <div class="container h-100 d-block">
+                      <div class="row align-items-center h-100">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                          <div class="caption animated fadeIn">
+                            <h2 class="animated fadeInLeft">Boat Excursions</h2>
+                            <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                            <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item sea">
+                    <div class="container h-100 d-block">
+                      <div class="row align-items-center h-100">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                          <div class="caption animated fadeIn">
+                            <h2 class="animated fadeInLeft">Discover the canyon by the sea</h2>
+                            <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                            <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item river">
+                    <div class="container h-100 d-block">
+                      <div class="row align-items-center h-100">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                          <div class="caption animated fadeIn">
+                            <h2 class="animated fadeInLeft">Explore the river valley</h2>
+                            <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                            <a class="animated fadeInUp btn delicious-btn" href="#">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </section>
+        <section class="introduccion">
+            <h1>Kaizen como filosofia de vida</h1>
+            <article>
+                <div>
+                    <p>Kaizen es una palabra japonesa que se compone de dos sinogramas de escritura japonesa que
+                        significan “bueno” y “cambio”, y actualmente, Kaizen se refiere a un sistema de mejora continua
+                        en el que las pequeñas, pero constantes mejoras, acumulan tras de sí grandes beneficios a largo
+                        plazo.</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="Entrenamiento">
+                    <img src="./img/Entrenamiento.png" alt="Hombre musculado" class="imgHombre">
+                    <p>En nuestra seccion de entrenaminetos encontraras rutinas (con su respectiva escala de progreso)
+                        segun en el nivel que estes, tambien veras diferentes formatos de entrenamineto como calistenia,
+                        funcional y demas </p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="nutricion">
+                    <p class="pNutricion">Dentro de nuestra seccion de Alimentacion podras aprender a calcular tu gasto
+                        calorico a travez de harris benedi y asi armar tu plan de nutricion con chat gpt, tambien
+                        encontraras tip para cocinar diferentes platos y info sobre nutricion variada</p>
+                    <img src="./img/Nutricion.png" class="imgNutricion" alt="mujer con fondo de frutas y verduras">
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="habitos">
+                    <img src="./img/Habitos.png" alt="postura de meditacion" class="imgHabitos">
+                    <p>Quien domina sus habitos controlara su vida, en esta seccion encontraras informacion sobre
+                        diferentes habitos para reprogramar tu vida </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
         <div class="logofooter"><img src="./img/kaizen.png" alt="Logo Kaizen" class="logo"></div>
         <p>Todos los derechos reservados</p>
         <ul class="ulFooter">
-            <il class="logofooter"><a href="#"><img src="./img/instagram.png" class="logo" alt="logo instagram"></a></il>
+            <il class="logofooter"><a href="#"><img src="./img/instagram.png" class="logo" alt="logo instagram"></a>
+            </il>
             <il class="logofooter"><a href="#"><img src="./img/facebook.png" class="logo" alt="logo facebook"></a></il>
-            <il class="logofooter"><a href="#"><img src="./img/twitter.png" class="logo"  alt="logo twitter"></a></il>
+            <il class="logofooter"><a href="#"><img src="./img/twitter.png" class="logo" alt="logo twitter"></a></il>
         </ul>
-   </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,32 @@
+footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(59, 58, 58);
+    .logofooter{
+        height: 50px;
+        width: 50px;
+    }
+    .ulFooter{
+        display: flex;
+        width: 200px;
+        height: 50px;
+        justify-content: space-around;
+    }
+}
+// .logofooter{
+//     height: 50px;
+//     width: 50px;
+// }
+// .ulFooter{
+//     display: flex;
+//     width: 200px;
+//     height: 50px;
+//     justify-content: space-around;
+// }
+// fieldset{
+//     margin: 20px;
+//     display: grid;
+// }
